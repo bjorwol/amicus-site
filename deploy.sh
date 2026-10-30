@@ -5,8 +5,8 @@
 
 set -euo pipefail
 
-STUDIO="STUDIO_NAME"     # TODO
-PROJECT="amicus"          # TODO: confirm folder name with course staff
+STUDIO="DesignforOfflineExperiences"
+PROJECT="amicus"
 SUNET="${1:?Usage: ./deploy.sh <sunet-id>}"
 
 DEST="/afs/ir/class/cs147/WWW/projects/${STUDIO}/${PROJECT}/"

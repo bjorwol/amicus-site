@@ -1,262 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amicus | CS 147 Autumn 2026</title>
-  <meta name="description" content="Amicus is a peer support app for people navigating the court system on their own. A CS 147 project at Stanford.">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amicus | CS 147 Autumn 2026</title>
+    <meta
+      name="description"
+      content="Amicus is a peer support app for people navigating the court system on their own. A CS 147 project at Stanford." />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo" aria-label="Amicus home">
+          <img
+            src="assets/img/amicus-logo.svg"
+            alt="Amicus"
+            width="383"
+            height="132" />
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="#concept">Concept</a>
+          <a href="#process">Process</a>
+          <a href="#prototype">Prototype</a>
+          <a href="#team">Team</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- ============ HEADER / NAV ============ -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#home" class="logo" aria-label="Amicus home">
-        <img src="assets/img/amicus-logo.svg" alt="Amicus" width="383" height="132">
-      </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="site-nav" class="site-nav">
-        <a href="#concept">Concept</a>
-        <a href="#process">Process</a>
-        <a href="#prototype">Prototype</a>
-        <a href="#team">Team</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ============ HERO ============ -->
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">CS 147 &middot; Autumn 2026</p>
-          <!-- TODO: final headline -->
-          <h1>Navigate court with someone <span class="accent">who's been there.</span></h1>
-          <!-- TODO: 1-sentence value proposition (graded) -->
-          <p class="value-prop">Amicus connects people representing themselves in court with peers who have walked the same path.</p>
-          <a href="#concept" class="btn">Learn more</a>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="blob"></div>
-          <!-- TODO: replace with a hi-fi app screenshot (assets/img/hero-screen.png) -->
-          <div class="phone">
-            <div class="phone-screen">
-              <img src="assets/img/amicus-icon.png" alt="" class="phone-placeholder-icon">
-              <span>App screen coming soon</span>
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">CS 147 &middot; Autumn 2026</p>
+            <!-- TODO: final headline -->
+            <h1>
+              Navigate court with someone
+              <span class="accent">who's been there.</span>
+            </h1>
+            <!-- TODO: 1-sentence value proposition (graded) -->
+            <p class="value-prop">
+              Amicus connects people representing themselves in court with peers
+              who have walked the same path.
+            </p>
+            <a href="#concept" class="btn">Learn more</a>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="blob"></div>
+            <!-- TODO: replace with a hi-fi app screenshot (assets/img/hero-screen.png) -->
+            <div class="phone">
+              <div class="phone-screen">
+                <img
+                  src="assets/img/amicus-icon.png"
+                  alt=""
+                  class="phone-placeholder-icon" />
+                <span>App screen coming soon</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============ CONCEPT ============ -->
-    <section id="concept" class="section">
-      <div class="container">
-        <h2>What is Amicus?</h2>
-        <!-- TODO: short, compelling 2-3 sentence description (graded) -->
-        <p class="lead">
-          Every year, many people walk into family court without a lawyer, unsure of what forms to file or what to expect.
-          Amicus pairs them with peers who have been through the same process, so they have someone to ask, learn from, and lean on.
-          [Placeholder description: replace with your team's final 2-3 sentences.]
-        </p>
-      </div>
-      <div class="container">
-        <div class="pillars">
-          <!-- TODO: swap in your real key features/tasks once the concept is final -->
-          <article class="pillar">
-            <h3>Find a peer</h3>
-            <p>[Placeholder] Match with someone who has faced a similar case.</p>
-          </article>
-          <article class="pillar">
-            <h3>Ask questions</h3>
-            <p>[Placeholder] Get answers in plain language, without judgment.</p>
-          </article>
-          <article class="pillar">
-            <h3>Feel prepared</h3>
-            <p>[Placeholder] Walk into court knowing what comes next.</p>
-          </article>
+      <!-- ============ CONCEPT ============ -->
+      <section id="concept" class="section">
+        <div class="container">
+          <h2>What is Amicus?</h2>
+          <!-- TODO: short, compelling 2-3 sentence description (graded) -->
+          <p class="lead">
+            Every year, many people enter the legal process without a lawyer and
+            limited support. Amicus helps connect them with peers who have been
+            through the same process, so they have community to ask, learn from,
+            and lean on.
+          </p>
         </div>
-      </div>
-    </section>
+        <div class="container">
+          <div class="pillars">
+            <!-- TODO: swap in your real key features/tasks once the concept is final -->
+            <article class="pillar">
+              <h3>Find an intimate support group</h3>
+              <p>Connect with those close to you in your legal domain.</p>
+            </article>
+            <article class="pillar">
+              <h3>Share and learn from your community</h3>
+              <p>Find legal guidance and share your experiences.</p>
+            </article>
+            <article class="pillar">
+              <h3>Navigate your legal journey</h3>
+              <p>Proceed through your case with confidence!</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <!-- ============ PROCESS / DELIVERABLES ============ -->
-    <section id="process" class="section section-tint">
-      <div class="container">
-        <h2>Our process</h2>
-        <p class="section-intro">Each step of our design process, from needfinding to final report.</p>
+      <!-- ============ PROCESS / DELIVERABLES ============ -->
+      <section id="process" class="section section-tint">
+        <div class="container">
+          <h2>Our process</h2>
+          <p class="section-intro">
+            Each step of our design process, from needfinding to final report.
+          </p>
 
-        <!--
+          <!--
           HOW TO ADD A DELIVERABLE:
           1. Put the file in /deliverables (e.g. deliverables/a1-needfinding.pdf). Lowercase, no spaces.
           2. Point the link's href at it (relative path, no leading slash).
           3. Remove "is-soon" from the card and swap the <span class="link-soon"> for an <a>.
         -->
-        <ol class="timeline">
+          <ol class="timeline">
+            <li class="step">
+              <span class="step-tag">A1</span>
+              <h3>Needfinding</h3>
+              <div class="step-links">
+                <a
+                  href="deliverables/a1-needfinding.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Slides</a
+                >
+              </div>
+            </li>
 
-          <li class="step">
-            <span class="step-tag">A1</span>
-            <h3>Needfinding</h3>
-            <div class="step-links">
-              <a href="deliverables/a1-needfinding.pdf" target="_blank" rel="noopener">Slides</a>
-            </div>
-          </li>
+            <li class="step">
+              <span class="step-tag">A2</span>
+              <h3>
+                Additional Needfinding, POVs, HMWs &amp; Experience Prototypes
+              </h3>
+              <div class="step-links">
+                <a
+                  href="deliverables/a2-pov-hmw-experience-prototypes.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Slides</a
+                >
+              </div>
+            </li>
 
-          <li class="step">
-            <span class="step-tag">A2</span>
-            <h3>Additional Needfinding, POVs, HMWs &amp; Experience Prototypes</h3>
-            <div class="step-links">
-              <a href="deliverables/a2-pov-hmw-experience-prototypes.pdf" target="_blank" rel="noopener">Slides</a>
-            </div>
-          </li>
+            <li class="step">
+              <span class="step-tag">A4</span>
+              <h3>Concept Video</h3>
+              <div class="step-links">
+                <a
+                  href="deliverables/a4-concept-video.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Slides</a
+                >
+                <a href="#prototype">Video</a>
+              </div>
+            </li>
 
-          <li class="step">
-            <span class="step-tag">A4</span>
-            <h3>Concept Video</h3>
-            <div class="step-links">
-              <a href="deliverables/a4-concept-video.pdf" target="_blank" rel="noopener">Slides</a>
-              <a href="#prototype">Video</a>
-            </div>
-          </li>
+            <li class="step is-soon">
+              <span class="step-tag">A5</span>
+              <h3>Sketching, Low-fi Prototyping &amp; Usability Testing</h3>
+              <div class="step-links">
+                <span class="link-soon">Slides</span>
+              </div>
+            </li>
 
-          <li class="step is-soon">
-            <span class="step-tag">A5</span>
-            <h3>Sketching, Low-fi Prototyping &amp; Usability Testing</h3>
-            <div class="step-links">
-              <span class="link-soon">Slides</span>
-            </div>
-          </li>
+            <li class="step is-soon">
+              <span class="step-tag">A6</span>
+              <h3>Interactive Medium-fi Prototype</h3>
+              <div class="step-links">
+                <span class="link-soon">Slides</span>
+                <span class="link-soon">Figma</span>
+                <span class="link-soon">README</span>
+              </div>
+            </li>
 
-          <li class="step is-soon">
-            <span class="step-tag">A6</span>
-            <h3>Interactive Medium-fi Prototype</h3>
-            <div class="step-links">
-              <span class="link-soon">Slides</span>
-              <span class="link-soon">Figma</span>
-              <span class="link-soon">README</span>
-            </div>
-          </li>
+            <li class="step is-soon">
+              <span class="step-tag">A8</span>
+              <h3>Interactive High-fi Prototype</h3>
+              <div class="step-links">
+                <span class="link-soon">Slides</span>
+                <span class="link-soon">Prototype</span>
+                <span class="link-soon">README</span>
+              </div>
+            </li>
 
-          <li class="step is-soon">
-            <span class="step-tag">A8</span>
-            <h3>Interactive High-fi Prototype</h3>
-            <div class="step-links">
-              <span class="link-soon">Slides</span>
-              <span class="link-soon">Prototype</span>
-              <span class="link-soon">README</span>
-            </div>
-          </li>
+            <li class="step is-soon">
+              <span class="step-tag">A9</span>
+              <h3>Heuristic Evaluation Synthesis</h3>
+              <div class="step-links">
+                <span class="link-soon">PDF</span>
+                <span class="link-soon">Spreadsheet</span>
+              </div>
+            </li>
 
-          <li class="step is-soon">
-            <span class="step-tag">A9</span>
-            <h3>Heuristic Evaluation Synthesis</h3>
-            <div class="step-links">
-              <span class="link-soon">PDF</span>
-              <span class="link-soon">Spreadsheet</span>
-            </div>
-          </li>
+            <li class="step is-soon">
+              <span class="step-tag">A10</span>
+              <h3>Poster, Pitch &amp; Demo Video</h3>
+              <div class="step-links">
+                <span class="link-soon">Pitch slide</span>
+                <span class="link-soon">Script</span>
+                <span class="link-soon">Poster</span>
+                <span class="link-soon">Demo video</span>
+              </div>
+            </li>
 
-          <li class="step is-soon">
-            <span class="step-tag">A10</span>
-            <h3>Poster, Pitch &amp; Demo Video</h3>
-            <div class="step-links">
-              <span class="link-soon">Pitch slide</span>
-              <span class="link-soon">Script</span>
-              <span class="link-soon">Poster</span>
-              <span class="link-soon">Demo video</span>
-            </div>
-          </li>
+            <li class="step is-soon">
+              <span class="step-tag">A11</span>
+              <h3>Final Report</h3>
+              <div class="step-links">
+                <span class="link-soon">Report</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-          <li class="step is-soon">
-            <span class="step-tag">A11</span>
-            <h3>Final Report</h3>
-            <div class="step-links">
-              <span class="link-soon">Report</span>
-            </div>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ PROTOTYPE / VIDEOS ============ -->
-    <section id="prototype" class="section">
-      <div class="container">
-        <h2>Concept video</h2>
-        <!--
+      <!-- ============ PROTOTYPE / VIDEOS ============ -->
+      <section id="prototype" class="section">
+        <div class="container">
+          <h2>Concept video</h2>
+          <!--
           Each video needs THREE formats (graded):
           1. Embedded:  <video> below, file compressed with HandBrake and saved to media/
           2. YouTube:   the link under the player
           3. Download:  the download link (same file as the embed)
         -->
-        <div class="video-frame">
-          <!-- TODO: uncomment once media/concept-video.mp4 is uploaded
+          <div class="video-frame">
+            <!-- TODO: uncomment once media/concept-video.mp4 is uploaded
           <video controls preload="metadata" poster="assets/img/concept-video-poster.jpg">
             <source src="media/concept-video.mp4" type="video/mp4">
           </video>
           -->
-          <div class="video-placeholder">Concept video coming soon</div>
-        </div>
-        <div class="video-links">
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener">Watch on YouTube</a> <!-- TODO: real YouTube URL -->
-          <a href="media/concept-video.mp4" download>Download video</a>
-        </div>
+            <div class="video-placeholder">Concept video coming soon</div>
+          </div>
+          <div class="video-links">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+              >Watch on YouTube</a
+            >
+            <!-- TODO: real YouTube URL -->
+            <a href="media/concept-video.mp4" download>Download video</a>
+          </div>
 
-        <h2 class="subsection-title">Demo video</h2>
-        <div class="video-frame">
-          <div class="video-placeholder">Demo video coming with A10</div>
+          <h2 class="subsection-title">Demo video</h2>
+          <div class="video-frame">
+            <div class="video-placeholder">Demo video coming with A10</div>
+          </div>
         </div>
+      </section>
+
+      <!-- ============ TEAM ============ -->
+      <section id="team" class="section section-tint">
+        <div class="container">
+          <p class="eyebrow">The team</p>
+          <h2>Meet the Amicus team</h2>
+          <p class="section-intro">The people behind Amicus.</p>
+          <!-- TODO: fill in names (First L.) and alt text. Roles: add a <p> under the name later if needed. -->
+          <div class="team-grid">
+            <article class="member">
+              <div class="avatar">
+                <img
+                  src="assets/img/team/member-1.jpg"
+                  alt="Lauren K."
+                  width="400"
+                  height="400"
+                  loading="lazy" />
+              </div>
+              <h3>Lauren K.</h3>
+              <p></p>
+            </article>
+            <article class="member">
+              <div class="avatar">
+                <img
+                  src="assets/img/team/member-2.jpg"
+                  alt="Alyssa L."
+                  width="400"
+                  height="400"
+                  loading="lazy" />
+              </div>
+              <h3>Alyssa L.</h3>
+              <p></p>
+            </article>
+            <article class="member">
+              <div class="avatar">
+                <img
+                  src="assets/img/team/member-3.jpg"
+                  alt="Nicole N."
+                  width="400"
+                  height="400"
+                  loading="lazy" />
+              </div>
+              <h3>Nicole N.</h3>
+              <p></p>
+            </article>
+            <article class="member">
+              <div class="avatar">
+                <img
+                  src="assets/img/team/member-4.jpg"
+                  alt="Alexis Y."
+                  width="400"
+                  height="400"
+                  loading="lazy" />
+              </div>
+              <h3>Alexis Y.</h3>
+              <p></p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img src="assets/img/amicus-icon.png" alt="" width="40" height="40" />
+        <p>
+          Amicus &middot; CS 147: Introduction to Human-Computer Interaction
+          Design &middot; Stanford University, Autumn 2026
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- ============ TEAM ============ -->
-    <section id="team" class="section section-tint">
-      <div class="container">
-        <p class="eyebrow">The team</p>
-        <h2>Meet the Amicus team</h2>
-        <p class="section-intro">The people behind Amicus.</p>
-        <!-- TODO: fill in names (First L.) and alt text. Roles: add a <p> under the name later if needed. -->
-        <div class="team-grid">
-          <article class="member">
-            <div class="avatar"><img src="assets/img/team/member-1.jpg" alt="Lauren K." width="400" height="400" loading="lazy"></div>
-            <h3>Lauren K.</h3>
-            <p></p>
-          </article>
-          <article class="member">
-            <div class="avatar"><img src="assets/img/team/member-2.jpg" alt="Alyssa L." width="400" height="400" loading="lazy"></div>
-            <h3>Alyssa L.</h3>
-            <p></p>
-          </article>
-          <article class="member">
-            <div class="avatar"><img src="assets/img/team/member-3.jpg" alt="Nicole N." width="400" height="400" loading="lazy"></div>
-            <h3>Nicole N.</h3>
-            <p></p>
-          </article>
-          <article class="member">
-            <div class="avatar"><img src="assets/img/team/member-4.jpg" alt="Alexis Y." width="400" height="400" loading="lazy"></div>
-            <h3>Alexis Y.</h3>
-            <p></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/img/amicus-icon.png" alt="" width="40" height="40">
-      <p>Amicus &middot; CS 147: Introduction to Human-Computer Interaction Design &middot; Stanford University, Autumn 2026</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
