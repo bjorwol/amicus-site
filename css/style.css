@@ -194,6 +194,7 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 520px;
 }
 
@@ -207,7 +208,6 @@ h3 {
 .phone {
   position: relative;
   width: 260px;
-  aspect-ratio: 1 / 1.9;
   background: var(--ink);
   border-radius: 40px;
   padding: 12px;
@@ -216,18 +216,16 @@ h3 {
 }
 
 .phone-screen {
-  height: 100%;
   border-radius: 30px;
   background: #fff;
   overflow: hidden;
+  padding: 8px 6px 4px;
 }
 
 .phone-screenshot {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  border-radius: inherit;
+  height: auto;
+  display: block;
 }
 
 /* ---------- Sections ---------- */
