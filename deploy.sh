@@ -14,7 +14,7 @@ DEST="/afs/ir/class/cs147/WWW/projects/${STUDIO}/${PROJECT}/"
 rsync -avz --delete \
   --exclude ".git" --exclude ".gitignore" --exclude ".DS_Store" \
   --exclude "README.md" --exclude "CLAUDE.md" --exclude "deploy.sh" \
-  ./ "${SUNET}@rice.stanford.edu:${DEST}"
+  ./ "${SUNET}@myth.stanford.edu:${DEST}"
 
 echo ""
 echo "Deployed. Check: http://web.stanford.edu/class/cs147/projects/${STUDIO}/${PROJECT}/"
